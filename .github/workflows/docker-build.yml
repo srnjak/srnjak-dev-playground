@@ -36,8 +36,8 @@ jobs:
         run: >
           docker buildx create --use
           docker buildx build
-          -t ${{ secrets.DOCKER_HUB_USERNAME }}/srnjak-dev-playground:latest
-          -t ${{ secrets.DOCKER_HUB_USERNAME }}/srnjak-dev-playground:ubuntu-${{ matrix.ubuntu_version }}
-          -t ${{ secrets.DOCKER_HUB_USERNAME }}/srnjak-dev-playground:ubuntu-${{ matrix.ubuntu_version }}-${{ github.run_number }}
+          -t ${{ vars.DOCKER_HUB_USERNAME }}/srnjak-dev-playground:latest
+          -t ${{ vars.DOCKER_HUB_USERNAME }}/srnjak-dev-playground:ubuntu-${{ matrix.ubuntu_version }}
+          -t ${{ vars.DOCKER_HUB_USERNAME }}/srnjak-dev-playground:ubuntu-${{ matrix.ubuntu_version }}-${{ github.run_number }}
           --build-arg UBUNTU_VERSION=${{ matrix.ubuntu_version }}
           --push .
