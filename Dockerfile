@@ -1,4 +1,8 @@
-FROM ubuntu:22.04
+# Use the specified Ubuntu version as a build argument
+ARG UBUNTU_VERSION=22.04
+
+# Use the base Ubuntu image with the specified version
+FROM ubuntu:${UBUNTU_VERSION}
 MAINTAINER Grega Krajnc, srnjak.com
 
 RUN mkdir /playground

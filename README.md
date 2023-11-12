@@ -1,15 +1,15 @@
 # Srnjak development playground Docker Image
 
 ## Description
-This Docker image provides a versatile development playground with an unminimized Ubuntu base. 
-It is suitable for various testing and development purposes. 
-The image includes sudo, the joe text editor, and additional apt sources from srnjak.com for extended functionality.
+This Docker image provides a versatile development playground with an unminimized Ubuntu base. It is suitable for various testing and development purposes. The image includes sudo, the joe text editor, and additional apt sources from srnjak.com for extended functionality.
 
-## Usage
-1. Build the Docker image:
+## Build and Usage
+1. Build the Docker image, optionally specifying the Ubuntu version:
    ```bash
-   docker build -t srnjak-dev-playground .
+   docker build -t srnjak-dev-playground --build-arg UBUNTU_VERSION=22.04 .
    ```
+
+Replace `22.04` with the desired Ubuntu version.
 
 2. Run a container based on the image:
    ```bash
