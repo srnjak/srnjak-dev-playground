@@ -25,3 +25,7 @@ Replace `22.04` with the desired Ubuntu version.
 ## Added apt sources
 - https://ci.srnjak.com/nexus/repository/apt-release (main)
 - https://ci.srnjak.com/nexus/repository/apt-preview (preview)
+
+## Docker Hub
+The Docker image is available on Docker Hub:
+- [srnjak/srnjak-dev-playground](https://hub.docker.com/r/srnjak/srnjak-dev-playground)
